@@ -63,6 +63,11 @@ export class Character {
 		}
 	}
 
+	fight(enemy) {
+		let damage = this.attack;
+		enemy.receiveDamage(damage);
+	}
+
 	update(dt) {
 		for (let effect of this.effects) {
 			effect.time_to_live -= dt;
