@@ -1,4 +1,4 @@
-class Inventory {
+export class Inventory {
   constructor(max_items = 0) {
 	this.max_items = max_items;
 	this.items = [];

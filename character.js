@@ -1,6 +1,8 @@
+import { Inventory } from './inventory.js';
+
 // This class describes any character that can fight
 
-class Character {
+export class Character {
 	constructor(name) {
 		this.name = name;
 		this.hp = 100;
@@ -29,19 +31,19 @@ class Character {
 	}
 
 	get strength() {
-		return getStat('strength');
+		return this.getStat('strength');
 	}
 
 	get health() {
-		return getStat('health');
+		return this.getStat('health');
 	}
 
 	get agility() {
-		return getStat('agility');
+		return this.getStat('agility');
 	}
 
 	get intelligence() {
-		return getStat('intelligence');
+		return this.getStat('intelligence');
 	}
 
 	get attack() {
