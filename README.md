@@ -1,0 +1,2 @@
+# FreeIdle
+SuperIdle
